@@ -1,0 +1,40 @@
+.middle{
+    background-color: #FFF;
+}
+.Title {
+    color:rgb(228, 0, 85);
+    text-align: center;
+    font-size: 48px;
+    width: 100%;
+}
+.remind{
+    text-align:left;
+    font-size: 16px;
+    padding-top: 5px;
+    width: 100%;
+    color: #F00;
+}
+#enroll{
+    padding-left: 180px;
+}
+
+#ok{
+    left: 677px;
+    top: 615px;
+    width: 500px;
+    height: 46px;
+    padding-left: 350px;
+    color: #FFF;
+    font-weight: bold;
+}
+#ok table tr td{
+    background-color: rgb(228, 0, 85);
+    border-radius: 25px;
+}
+
+#ok table tr td a {
+    text-align: center;
+    font-weight: bold;
+    color: #FFF;
+    text-decoration: none;
+}

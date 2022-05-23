@@ -1,0 +1,142 @@
+.o{
+    background-color: #fff;
+    padding-left: 60px;
+}
+ul.Fil {
+    position: relative;
+    width: 750px;
+    height: 750px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+li.Fil_sli {
+    margin: 0;
+    padding: 0;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* 弹性布局 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* 切换效果 */
+    transition: .5s transform ease-in-out;
+}
+
+.Fil_sli:nth-of-type(2) {
+    left: 100%;
+}
+
+.Fil_sli:nth-of-type(3) {
+    left: 200%;
+}
+
+.Fil_sli:nth-of-type(4) {
+    left: 300%;
+}
+
+.Fil input {
+    position: relative;
+    z-index: 100;
+}
+
+.Fil-vis {
+    position: absolute;
+    width: 100%;
+    bottom: 12px;
+    text-align: center;
+    z-index: 250;
+}
+
+.Fil-vis label {
+    /* 内联+块级 */
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 0 3px;
+    border: 2px solid #fff;
+    z-index: 200;
+}
+
+/* 定义radio选中之后 同一层.Fil-vis中label样式 */
+.Fil input[type="radio"]:nth-of-type(1):checked~.Fil-vis label:nth-of-type(1) {
+    background-color: #333;
+}
+
+.Fil input[type="radio"]:nth-of-type(2):checked~.Fil-vis label:nth-of-type(2) {
+    background-color: #333;
+}
+
+.Fil input[type="radio"]:nth-of-type(3):checked~.Fil-vis label:nth-of-type(3) {
+    background-color: #333;
+}
+
+.Fil input[type="radio"]:nth-of-type(4):checked~.Fil-vis label:nth-of-type(4) {
+    background-color: #333;
+}
+
+/* 定义radio选中之后 .Fil_sli移动效果 */
+.Fil input[type="radio"]:nth-of-type(1):checked~.Fil_sli {
+    transform: translatex(0%);
+}
+
+.Fil input[type="radio"]:nth-of-type(2):checked~.Fil_sli {
+    transform: translatex(-100%);
+}
+
+.Fil input[type="radio"]:nth-of-type(3):checked~.Fil_sli {
+    transform: translatex(-200%);
+}
+
+.Fil input[type="radio"]:nth-of-type(4):checked~.Fil_sli {
+    transform: translatex(-300%);
+}
+
+.Fil_nav {
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%);
+    width: 100%;
+    z-index: 100;
+    padding: 0 20px;
+    display: flex;
+    /* 向左右留有空白的盒子填满 */
+    justify-content: space-between;
+    box-sizing: border-box;
+    display: none;
+}
+
+.Fil_nav i {
+    font-size: 32px;
+    color: #fff;
+}
+
+.Fil input[type="radio"]:nth-of-type(1):checked~.Fil_nav:nth-of-type(1) {
+    display: flex;
+}
+
+.Fil input[type="radio"]:nth-of-type(2):checked~.Fil_nav:nth-of-type(2) {
+    display: flex;
+}
+
+.Fil input[type="radio"]:nth-of-type(3):checked~.Fil_nav:nth-of-type(3) {
+    display: flex;
+}
+
+.Fil input[type="radio"]:nth-of-type(4):checked~.Fil_nav:nth-of-type(4) {
+    display: flex;
+}
+
+.tu{
+    float: right;
+    position: absolute;
+    top: 105px;
+    right: 500px;
+    list-style: none;
+}
