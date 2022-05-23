@@ -1,0 +1,54 @@
+.nav{
+    background-color: #fff;
+    padding-top: 15px;
+}
+#shoreName{
+    color: rgb(228, 0, 85);
+    font-size: 24px;
+}
+#address1{
+    color:rgb(189, 192, 13);
+    padding: 0 10px 0 12px;
+    font-size: 18px;
+}
+#address2{
+    color: #525252bd;
+    padding-left: 12px;
+}
+.menu dl dd{
+    list-style:none;
+    float: left;
+    width: 25%;
+}
+.menu dl dd:hover{
+    list-style:none;
+    float: left;
+    width: 270px;
+    padding: 10px; ;
+    border: black 2px solid;
+    display: block;
+    box-shadow: 0 4px 0 15px  #ccc;
+    
+}
+.Cname{
+    color: rgb(228, 0,85);
+    font-size: 20px;
+}
+.sup_up{
+    color:gold;
+}
+.clear{
+    clear: both;
+}
+.CDname tr td{
+    width: 300px;
+    font-size: 24px;
+    text-align: center;
+}
+#tx{
+    text-align: center;
+    padding-top: 10px;
+}
+.Cname{
+    background-color: rgba(54,54,54,0.2);
+}
